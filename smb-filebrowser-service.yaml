@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: smb-filebrowser
+spec:
+  selector:
+    app: smb-filebrowser
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
